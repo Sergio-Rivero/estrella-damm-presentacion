@@ -294,14 +294,27 @@
     }
     .video-cover{
       min-height:310px;
-      background:
-        linear-gradient(180deg,rgba(21,17,15,.02),rgba(21,17,15,.34)),
-        url('https://img.youtube.com/vi/p4Y1FwUUXbQ/maxresdefault.jpg') center/cover no-repeat,
-        linear-gradient(135deg,#b5121b,#f8ead2);
       position:relative;
       display:flex;
       align-items:center;
       justify-content:center;
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+    }
+
+    .video-cover.mediterraneo{
+      background:
+        linear-gradient(180deg,rgba(21,17,15,.02),rgba(21,17,15,.34)),
+        url('https://claudiadans.com/wp-content/uploads/2013/05/cast.jpg') center/cover no-repeat,
+        linear-gradient(135deg,#b5121b,#f8ead2);
+    }
+
+    .video-cover.seleccionado{
+      background:
+        linear-gradient(180deg,rgba(21,17,15,.02),rgba(21,17,15,.34)),
+        url('https://i.ytimg.com/vi/p4Y1FwUUXbQ/hqdefault.jpg') center/cover no-repeat,
+        linear-gradient(135deg,#b5121b,#f8ead2);
     }
     .play{
       width:78px;height:78px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;box-shadow:0 22px 45px rgba(0,0,0,.22);
@@ -481,14 +494,24 @@
           </div>
         </div>
         <div class="campaign-layout">
-          <div class="image-card img-campaign"><img src="https://claudiadans.com/wp-content/uploads/2013/05/cast.jpg" alt="Campaña Mediterráneamente" /><span>Campaña Mediterráneamente: ocio, mar y emoción</span></div>
           <div class="video-card">
-            <div class="video-cover">
-              <a class="play" href="https://www.youtube.com/watch?v=p4Y1FwUUXbQ" target="_blank" rel="noopener" aria-label="Abrir spot en YouTube">▶</a>
+            <div class="video-cover mediterraneo">
+              <a class="play" href="https://youtu.be/UPn4NiwdfhU?si=RaJC3cSDCpTxgEBC" target="_blank" rel="noopener" aria-label="Abrir campaña Mediterráneamente en YouTube">▶</a>
+            </div>
+            <div class="video-info">
+              <h3>Campaña Mediterráneamente</h3>
+              <p>El territorio más reconocible de Estrella Damm: mar, verano, amistad, música y una manera de vender cerveza a través de emociones y recuerdos.</p>
+              <a class="button primary" href="https://youtu.be/UPn4NiwdfhU?si=RaJC3cSDCpTxgEBC" target="_blank" rel="noopener">Abrir campaña Mediterráneamente</a>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-cover seleccionado">
+              <a class="play" href="https://www.youtube.com/watch?v=p4Y1FwUUXbQ" target="_blank" rel="noopener" aria-label="Abrir spot elegido en YouTube">▶</a>
             </div>
             <div class="video-info">
               <h3>Spot elegido para la exposición</h3>
-              <p>Vídeo seleccionado para reforzar la parte de campaña: una pieza más dinámica para explicar cómo Estrella Damm trabaja emoción, música, recuerdo de marca y estilo de vida.</p>
+              <p>Vídeo seleccionado para explicar la fuerza del storytelling: música, ritmo, escena cotidiana y recuerdo de marca sin depender solo del producto.</p>
               <a class="button primary" href="https://www.youtube.com/watch?v=p4Y1FwUUXbQ" target="_blank" rel="noopener">Abrir vídeo seleccionado</a>
             </div>
           </div>
